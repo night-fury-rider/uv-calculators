@@ -121,6 +121,14 @@ code {
   color: red;
 }
 
+.rem-top-1 {
+  margin-top: 1rem;
+}
+
+.rem-top-2 {
+  margin-top: 2rem;
+}
+
 @media only screen and (min-width: 1200px) {
   #uv-app .container {
     max-width: 1600px;

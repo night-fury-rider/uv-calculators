@@ -1,0 +1,49 @@
+{
+  "config": {
+    "countryCode": "IN",
+    "langCode": "en",
+    "decimalPlaces": 2
+  },
+  "title": "Percentage Calculator",
+  "percentage": "Percentage",
+  "value": "Value",
+  "calculators": [
+    {
+      "type": "simple",
+      "title": "Simple Percentage",
+      "preText1": "What is percent",
+      "preText2": "of",
+      "placeholder1": "Percentage",
+      "placeholder2": "Value"
+    },
+    {
+      "type": "reverse",
+      "title": "Reverse Percentage",
+      "preText2": "is what percent of",
+      "placeholder1": "Value 1",
+      "placeholder2": "Value 2"
+    },
+    {
+      "type": "increase1",
+      "title": "Percentage Increase 1",
+      "preText1": "Percent change from",
+      "preText2": "to",
+      "placeholder1": "Value 1",
+      "placeholder2": "Value 2"
+    },
+    {
+      "type": "increase2",
+      "title": "Percentage Increase 2",
+      "preText1": "What is the amount",
+      "preText2": "when is increased by percent",
+      "placeholder1": "Value",
+      "placeholder2": "Percentage"
+    }
+  ],
+  "types": {
+    "simple": "simple",
+    "reverse": "reverse",
+    "increase1": "increase1",
+    "increase2": "increase2"
+  }
+}

@@ -8,7 +8,7 @@ import appData from './app-data.json';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App uv-font-medium">
       <UVHeader href={appData.header.website} title={appData.header.title} links={appData.header.links} />
       <Dashboard />
     </div>

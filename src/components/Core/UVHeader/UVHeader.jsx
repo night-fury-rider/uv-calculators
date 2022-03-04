@@ -2,8 +2,8 @@ import './UVHeader.css';
 
 const UVHeader = props => {
   return (
-    <header className="uv-header-container navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <header className="uv-header-container navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow uv-background-color-primary">
+      <nav className="navbar navbar-expand-md navbar-dark fixed-top uv-background-color-primary">
         <div className="container-fluid">
           <a href={props.href}
             target="_blank"

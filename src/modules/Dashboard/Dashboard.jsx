@@ -14,6 +14,7 @@ import RegistrationForm from '../../components/RegistrationForm/RegistrationForm
 import UVTimer from '../../components/UVTimer/UVTimer';
 import CentralContent2 from '../../components/Core/CentralContent/CentralContent2';
 import LowestPriceCalculator from '../../components/calculators/LowestPriceCalculator/LowestPriceCalculator';
+import PercentageCalculatorContainer from '../../components/calculators/PercentageCalculator/PercentageCalculatorContainer';
 
 const Dashboard = props => {
 
@@ -29,6 +30,9 @@ const Dashboard = props => {
               <Route path="*" element={<Navigate to={process.env.PUBLIC_URL + '/' + appData.sidebar.links[0].href} />}></Route>
               <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[0].href}
                 element={<LowestPriceCalculator />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[1].href}
+                element={<PercentageCalculatorContainer />}></Route>
+
 
             </Routes>
           </main>
