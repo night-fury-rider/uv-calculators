@@ -17,8 +17,7 @@ const UVSidebar = props => {
         <ul className="nav flex-column h-100">
           {props.links.map((linkObj, linkIndex) => (
             <li className="nav-item" key={linkIndex}>
-
-              <Link to={linkObj.href} className='nav-link'>{linkObj.title} </Link>
+              <Link to={process.env.PUBLIC_URL + '/' + linkObj.href} className='nav-link'>{linkObj.title} </Link>
             </li>
           ))}
         </ul>
