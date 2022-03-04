@@ -8,7 +8,7 @@ const UVHeader = props => {
           <a href={props.href}
             target="_blank"
             rel="noreferrer"
-            className="navbar-brand cursorPointer">{props.title}</a>
+            className="navbar-brand cursorPointer"><h3>{props.title}</h3></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

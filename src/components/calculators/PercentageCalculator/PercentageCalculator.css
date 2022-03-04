@@ -8,6 +8,10 @@
   word-break: break-word;
 }
 
+.uv-percentage-container {
+  margin-top: 2rem;
+}
+
 .uv-percentage-calculator {
   margin-top: 2rem;
 }
