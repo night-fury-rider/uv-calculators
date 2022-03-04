@@ -19,6 +19,10 @@
       {
         "title": "Percentage",
         "href": "percentage"
+      },
+      {
+        "title": "Inflation",
+        "href": "inflation"
       }
     ]
   },

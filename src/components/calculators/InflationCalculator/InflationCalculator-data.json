@@ -1,0 +1,7 @@
+{
+  "config": {
+    "amount": 10000,
+    "years": 15,
+    "inflationRate": 6
+  }
+}

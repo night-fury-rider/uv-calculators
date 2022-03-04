@@ -15,9 +15,9 @@ import UVTimer from '../../components/UVTimer/UVTimer';
 import CentralContent2 from '../../components/Core/CentralContent/CentralContent2';
 import LowestPriceCalculator from '../../components/calculators/LowestPriceCalculator/LowestPriceCalculator';
 import PercentageCalculatorContainer from '../../components/calculators/PercentageCalculator/PercentageCalculatorContainer';
+import InflationCalculator from '../../components/calculators/InflationCalculator/InflationCalculator';
 
 const Dashboard = props => {
-
   return (
     <div>
 
@@ -33,6 +33,8 @@ const Dashboard = props => {
               <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[1].href}
                 element={<PercentageCalculatorContainer />}></Route>
 
+              <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[2].href}
+                element={<InflationCalculator />}></Route>
 
             </Routes>
           </main>
