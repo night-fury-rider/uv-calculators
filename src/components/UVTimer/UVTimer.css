@@ -1,0 +1,14 @@
+.badge-circle {
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  background: yellow;
+  width: 100px;
+}
+
+.badge-circle p {
+  font-size: xxx-large;
+  font-weight: 700;
+}

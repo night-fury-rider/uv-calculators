@@ -1,0 +1,8 @@
+.lowest-price-calculator-container .row {
+  justify-content: space-around;
+}
+
+.lowest-price-calculator-container .card,
+.lowest-price-calculator-container .disabled-textfield {
+  margin-top: 1.5rem;
+}

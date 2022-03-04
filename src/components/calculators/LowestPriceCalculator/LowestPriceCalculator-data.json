@@ -1,0 +1,20 @@
+{
+  "title": "Price",
+  "units": ["Units", "ml", "gm", "kg"],
+  "errorsTitle": "Invalid Form details",
+  "errors": {
+    "required": "is a required field"
+  },
+  "price": {
+    "label": "Total Price",
+    "minValue": 1,
+    "minValueError": "Price must be more than "
+  },
+  "quantity": {
+    "label": "Total ",
+    "minValue": 1,
+    "minValueError": "Quantity must be more than ",
+    "maxValueError": "Quantity must be less than ",
+    "integer": "Quantity must not be in decimal"
+  }
+}

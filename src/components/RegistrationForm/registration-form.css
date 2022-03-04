@@ -1,0 +1,26 @@
+.registration-form-container .row {
+  margin-top: 1rem;
+}
+
+.phone-number-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.phone-number-container .phone-number {
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.phone-number-container svg {
+  width: 50px !important;
+}
+
+.registration-form-container .uv-header {
+  margin-top: 1rem;
+}
+
+.registration-form-container .field-error {
+  border-color: var(--color-danger);
+}

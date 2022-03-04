@@ -1,0 +1,42 @@
+{
+  "title": "Registration Form",
+  "errorsTitle": "Invalid Form details",
+  "errors": {
+    "required": "is a required field"
+  },
+  "name": {
+    "label": "Name",
+    "required": "Name is a required field",
+    "alphabet": "Name must have only Alphabets"
+  },
+  "age": {
+    "label": "Age",
+    "required": "Age is a required field",
+    "minValue": 18,
+    "minValueError": "Age must be more than ",
+    "maxValue": 60,
+    "maxValueError": "Age must be less than ",
+    "integer": "Age must not be in decimal"
+  },
+  "email": {
+    "label": "Email",
+    "email": "Invalid Email ID"
+  },
+  "password": {
+    "label": "Password"
+  },
+  "address": {
+    "label": "Address"
+  },
+  "phoneNos": {
+    "label": "Phone Number",
+    "limit": 2
+  },
+  "agreeCheck": {
+    "label": "I agree",
+    "errorMsg": "Please accept the terms and conditions."
+  },
+  "submit": {
+    "label": "Sign Up"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "header": {
+    "title": "UV Calculators",
+    "website": "http://www.yuvrajpatil.com",
+    "links": [
+      {
+        "src": "https://github.com/yuvi1422.png",
+        "href": "https://github.com/yuvi1422",
+        "alt": "Github Repo"
+      }
+    ]
+  },
+  "sidebar": {
+    "links": [
+      {
+        "title": "Lowest Price",
+        "href": "form"
+      }
+    ]
+  },
+  "table": {
+    "title": "UV Table",
+    "columns": ["Sr", "Name", "Runs", "Wickets"],
+    "rows": [
+      {
+        "name": "Sachin Tendulkar",
+        "runs": 18000,
+        "wickets": 150
+      },
+      {
+        "name": "Sourabh Ganguly",
+        "runs": 11000,
+        "wickets": 100
+      }
+    ]
+  },
+  "footer": {
+    "message": "© 2022 Yuvraj Patil All rights reserved."
+  },
+  "timer": {
+    "title": "UV Timer with useRef",
+    "start": "Start",
+    "pause": "Pause"
+  },
+  "centralContent1": {
+    "throtlling": "Update Base Data using Throtlling",
+    "debouncing": "Update Base Data using Debouncing"
+  },
+  "centralContent2": {
+    "increment": "Increment",
+    "decrement": "Decrement",
+    "reset": "Reset"
+  }
+}
