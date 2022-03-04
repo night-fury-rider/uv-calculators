@@ -26,8 +26,8 @@ const Dashboard = props => {
 
           <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <Routes>
-              <Route path="*" element={<Navigate to={appData.sidebar.links[0].href} />}></Route>
-              <Route path={appData.sidebar.links[0].href}
+              <Route path="*" element={<Navigate to={process.env.PUBLIC_URL + '/' + appData.sidebar.links[0].href} />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[0].href}
                 element={<LowestPriceCalculator />}></Route>
 
             </Routes>
