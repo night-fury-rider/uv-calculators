@@ -1,0 +1,12 @@
+{
+  "config": {
+    "basicSalary": 200000,
+    "hra": 100000,
+    "rent": 150000
+  },
+  "title": "Tax Exempted HRA Calculator",
+  "basic": "Annual Basic Salary",
+  "hra": "Annual HRA",
+  "rent": "Annual Rent",
+  "resultLabel": "Tax Exempted Amount"
+}

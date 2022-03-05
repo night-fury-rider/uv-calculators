@@ -23,6 +23,10 @@
       {
         "title": "Inflation",
         "href": "inflation"
+      },
+      {
+        "title": "Tax Exempted HRA",
+        "href": "hra"
       }
     ]
   },

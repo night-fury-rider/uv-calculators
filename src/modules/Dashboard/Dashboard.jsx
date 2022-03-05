@@ -16,6 +16,7 @@ import CentralContent2 from '../../components/Core/CentralContent/CentralContent
 import LowestPriceCalculator from '../../components/calculators/LowestPriceCalculator/LowestPriceCalculator';
 import PercentageCalculatorContainer from '../../components/calculators/PercentageCalculator/PercentageCalculatorContainer';
 import InflationCalculator from '../../components/calculators/InflationCalculator/InflationCalculator';
+import HRACalculator from '../../components/calculators/HRACalculator/HRACalculator';
 
 const Dashboard = props => {
   return (
@@ -35,6 +36,9 @@ const Dashboard = props => {
 
               <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[2].href}
                 element={<InflationCalculator />}></Route>
+
+              <Route path={process.env.PUBLIC_URL + '/' + appData.sidebar.links[3].href}
+                element={<HRACalculator />}></Route>
 
             </Routes>
           </main>

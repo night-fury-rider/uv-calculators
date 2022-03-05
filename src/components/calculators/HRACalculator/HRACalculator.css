@@ -1,0 +1,12 @@
+.uv-hra-container .row {
+  margin-top: 1rem;
+}
+
+.uv-hra-container .uv-result {
+  background-color: darkgray;
+  min-height: 100px;
+}
+
+.uv-hra-container .uv-input-label {
+  font-size: larger;
+}
