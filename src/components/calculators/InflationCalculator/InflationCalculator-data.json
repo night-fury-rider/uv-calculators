@@ -1,7 +1,12 @@
 {
   "config": {
     "amount": 10000,
-    "years": 15,
+    "noOfYears": 15,
     "inflationRate": 6
-  }
+  },
+  "title": "Inflation Calculator",
+  "currentAmt": "Current Amount",
+  "noOfYears": "No. of Years",
+  "inflationRate": "Inflation Rate",
+  "futureAmt": "Future Amount"
 }

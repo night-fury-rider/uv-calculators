@@ -51,7 +51,7 @@ const PriceCalculator = props => {
               value={rate}
               disabled
               className={"form-control disabled-textfield"} />
-            <label htmlFor="pricePerQuantity" className="form-label">{`${rData.title} / ${props.unit}`}</label>
+            <label htmlFor="pricePerQuantity" className="form-label">{`${rData.label} / ${props.unit}`}</label>
           </div>
         </div>
       </form>

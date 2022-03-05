@@ -15,11 +15,11 @@ Focus of this repository is only on calculators.
 
 - Lowest Cost Calculator
 - Percentage Calculator
+- Inflated Price Calculator
 
 ## Calculators to be developed.
 
 - Simple and Compound Interest Calculator
-- Inflated Price Calculator
 - Non-taxable HRA Amount Calculator
 
 ## Available Scripts

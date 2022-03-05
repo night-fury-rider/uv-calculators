@@ -1,5 +1,6 @@
 {
-  "title": "Price",
+  "title": "Lowest Price Calculator",
+  "label": "Price",
   "units": ["Units", "ml", "gm", "kg"],
   "errorsTitle": "Invalid Form details",
   "errors": {

@@ -9,7 +9,7 @@ const UVSidebar = props => {
   }
 
   return (
-    <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block sidebar collapse">
       <div className="position-sticky pt-3">
         <div className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

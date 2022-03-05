@@ -1,0 +1,12 @@
+.uv-inflation-calculator .row {
+  margin-top: 1rem;
+}
+
+.uv-inflation-calculator .uv-result {
+  background-color: darkgray;
+  min-height: 100px;
+}
+
+.uv-inflation-calculator .uv-input-label {
+  font-size: larger;
+}

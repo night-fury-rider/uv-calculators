@@ -53,6 +53,11 @@ const LowestPriceCalculator = () => {
   return (
     <div className='lowest-price-calculator-container'>
       <Container>
+        <Row className="justify-content-md-center">
+          <div className="uv-text-center">
+            <h1>{pData.title}</h1>
+          </div>
+        </Row>
         <Row>
           <>
             {calculators.map((obj, index) => (
@@ -61,8 +66,8 @@ const LowestPriceCalculator = () => {
                   bg={index === lowestEntryIndex ? 'success' : 'light'}
                   key={index}>
                   <Card.Body>
-                    <Card.Title>{`${pData.title} ${index + 1}`}</Card.Title>
-                    <PriceCalculator title={`${pData.title} ${1}`} unit={unit} evaluateLowest={evaluateLowest} componentIndex={index} />
+                    <Card.Title>{`${pData.label} ${index + 1}`}</Card.Title>
+                    <PriceCalculator title={`${pData.label} ${1}`} unit={unit} evaluateLowest={evaluateLowest} componentIndex={index} />
                   </Card.Body>
                 </Card>
               </Col>
