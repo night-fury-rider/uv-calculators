@@ -2,21 +2,14 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 import UVSidebar from '../../components/Core/UVSidebar/UVSidebar';
-import UVGrid from '../../components/UVGrid/UVGrid';
-import UVFooter from '../../components/Core/UVFooter/UVFooter';
-
-import './Dashboard.css';
-
-import appData from '../../app-data.json';
-
-import CentralContent1 from '../../components/Core/CentralContent/CentralContent1';
-import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
-import UVTimer from '../../components/UVTimer/UVTimer';
-import CentralContent2 from '../../components/Core/CentralContent/CentralContent2';
 import LowestPriceCalculator from '../../components/calculators/LowestPriceCalculator/LowestPriceCalculator';
 import PercentageCalculatorContainer from '../../components/calculators/PercentageCalculator/PercentageCalculatorContainer';
 import InflationCalculator from '../../components/calculators/InflationCalculator/InflationCalculator';
 import HRACalculator from '../../components/calculators/HRACalculator/HRACalculator';
+
+import './Dashboard.css';
+
+import appData from '../../app-data.json';
 
 const Dashboard = props => {
   return (
