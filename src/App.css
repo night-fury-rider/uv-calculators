@@ -145,6 +145,10 @@ code {
   margin-bottom: 2rem;
 }
 
+.uv-modules-container {
+  margin-bottom: 3rem;
+}
+
 @media only screen and (min-width: 1200px) {
   #uv-app .container {
     max-width: 1600px;
@@ -154,5 +158,8 @@ code {
 @media screen and (max-width: 767px) {
   .uv-container {
     margin-top: 0;
+  }
+  .uv-card {
+    margin-bottom: 1rem;
   }
 }

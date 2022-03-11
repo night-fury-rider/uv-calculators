@@ -45,7 +45,7 @@ const Dashboard = props => {
         </div>
       </div>
 
-      <UVFooter message={appData.footer.message} />
+
     </div>
   )
 };

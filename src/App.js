@@ -6,6 +6,7 @@ import UVHeader from './components/Core/UVHeader/UVHeader';
 import './App.css';
 import appData from './app-data.json';
 import UVSidebarMobile from './components/Core/UVSidebar/UVSidebarMobile';
+import UVFooter from './components/Core/UVFooter/UVFooter';
 
 function App() {
 
@@ -21,7 +22,10 @@ function App() {
         toggleMenu={toggleMenu} />
       <UVSidebarMobile links={appData.sidebar.links} show={isMenuOpen}
         onHide={() => setMenuOpen(false)} />
-      <Dashboard isMenuOpen={isMenuOpen} />
+      <div className='uv-modules-container'>
+        <Dashboard isMenuOpen={isMenuOpen} />
+      </div>
+      <UVFooter message={appData.footer.message} />
     </div>
   );
 }

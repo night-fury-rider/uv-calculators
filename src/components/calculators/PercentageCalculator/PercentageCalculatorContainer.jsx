@@ -10,9 +10,10 @@ const PercentageCalculatorContainer = props => {
         <Row>
           <>
             {pData.calculators.map((obj, index) => (
-              <Col md={pData.calculators.length > 2 ? 3 : 6} key={index}>
+              <Col md={pData.calculators.length > 2 ? 3 : 6} xs={12} key={index}>
                 <Card
                   bg="light"
+                  className="uv-card"
                   key={index}>
                   <Card.Body>
                     <Card.Title><h2>{`${obj.title}`}</h2></Card.Title>
