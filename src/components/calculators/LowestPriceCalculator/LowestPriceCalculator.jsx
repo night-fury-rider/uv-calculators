@@ -5,20 +5,23 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Card } from 'react-bootstrap';
 import './LowestPriceCalculator.css';
 import PriceCalculator from './PriceCalculator';
+import { getRate, isValidRate } from './PriceCalculatorService';
+
 import pData from './LowestPriceCalculator-data.json';
 
 const LowestPriceCalculator = () => {
 
   const stubCalculator = {
-    price: 1,
-    quantity: 1
+    price: '',
+    quantity: '',
+    isLowest: false,
+    rate: ''
   };
 
   const [calculators, setCalculators] = useState([stubCalculator, stubCalculator]);
+  const [lowestRate, setLowestRate] = useState('');
 
   const [unit, setUnit] = useState(pData.units[0]);
-  const [lowestEntryIndex, setLowestEntryIndex] = useState(-1);
-  const [lowestRate, setLowestRate] = useState(-1);
 
   const addCalculator = () => {
     let tmpCalculators = JSON.parse(JSON.stringify(calculators));
@@ -36,18 +39,40 @@ const LowestPriceCalculator = () => {
     setUnit(event.target.value);
   };
 
-  const evaluateLowest = (componentIndex, newRate) => {
+  const evaluateLowest = (componentIndex, price, quantity) => {
 
-    console.log('newRate: ', newRate);
+    let tmpCalculators = JSON.parse(JSON.stringify(calculators));
+    tmpCalculators[componentIndex].price = price;
+    tmpCalculators[componentIndex].quantity = quantity;
+    tmpCalculators[componentIndex].rate = getRate(price, quantity);
 
-    if (lowestRate === -1) {
-      setLowestRate(newRate);
-    } else if (newRate < lowestRate) {
-      setLowestRate(newRate);
-      setLowestEntryIndex(componentIndex);
-    } else if (lowestEntryIndex === -1) {
-      setLowestEntryIndex(0);
+    const calSize = tmpCalculators.length;
+
+    let tmpLowestRate = getRate(tmpCalculators[0].price, tmpCalculators[0].quantity);
+
+    // If first calculator values are incorrect, return
+    if (!isValidRate(tmpLowestRate)) {
+      setCalculators(tmpCalculators);
+      return;
     }
+
+    // Calculate the lowest rate
+    for (let i = 0; i < calSize; i++) {
+      tmpCalculators[i].rate = getRate(tmpCalculators[i].price, tmpCalculators[i].quantity);
+      // If any calculator values are incorrect, return
+      if (!isValidRate(tmpCalculators[i].rate)) {
+        setCalculators(tmpCalculators);
+        return;
+      }
+      if (tmpCalculators[i].rate < tmpLowestRate) {
+        tmpLowestRate = tmpCalculators[i].rate;
+      }
+    }
+
+    if (lowestRate === '' || tmpLowestRate < lowestRate) {
+      setLowestRate(tmpLowestRate);
+    }
+    setCalculators(tmpCalculators);
   };
 
   return (
@@ -63,7 +88,7 @@ const LowestPriceCalculator = () => {
             {calculators.map((obj, index) => (
               <Col md={calculators.length > 2 ? 4 : 6} key={index}>
                 <Card
-                  bg={index === lowestEntryIndex ? 'success' : 'light'}
+                  bg={lowestRate && obj.rate === lowestRate ? 'success' : 'light'}
                   key={index}>
                   <Card.Body>
                     <Card.Title>{`${pData.label} ${index + 1}`}</Card.Title>

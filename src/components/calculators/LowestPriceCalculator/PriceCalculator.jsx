@@ -2,25 +2,27 @@
 import { useState } from 'react';
 import rData from './LowestPriceCalculator-data.json';
 
+import { getRate } from './PriceCalculatorService';
+
 const PriceCalculator = props => {
 
 
-  const [price, setPrice] = useState(props.price ? props.price : 1);
-  const [quantity, setQuantity] = useState(props.quantity ? props.quantity : 1);
-  const [rate, setRate] = useState(props.rate ? props.rate : 1);
+  const [price, setPrice] = useState(props.price ? props.price : '');
+  const [quantity, setQuantity] = useState(props.quantity ? props.quantity : '');
+  const [rate, setRate] = useState(props.rate ? props.rate : '');
 
   const calculateRate = () => {
-    let newRate = Number((price / quantity).toFixed(2));
+    let newRate = getRate(price, quantity);
     setRate(newRate);
-    props.evaluateLowest(props.componentIndex, newRate);
+    props.evaluateLowest(props.componentIndex, price, quantity);
   };
 
   const handlePriceChange = (event) => {
-    setPrice(event.target.value);
+    setPrice(Number(event.target.value));
   };
 
   const handleQuantityChange = (event) => {
-    setQuantity(event.target.value);
+    setQuantity(Number(event.target.value));
   };
 
   return (
