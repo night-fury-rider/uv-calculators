@@ -6,6 +6,8 @@
   --color-danger: #d9534f;
   --color-inverse: #292b2c;
   --color-faded: #f7f7f7;
+  --color-light-soft: whitesmoke;
+  --color-dark-soft: #d2d2cf;
 }
 
 /* Color clases for themes started */
@@ -29,6 +31,12 @@
 }
 .uv-bg-faded {
   background-color: var(--color-faded);
+}
+.uv-bg-light-soft {
+  background-color: var(--color-light-soft);
+}
+.uv-bg-dark-soft {
+  background-color: var(--color-dark-soft);
 }
 
 .uv-bg-lavender {
@@ -147,6 +155,12 @@ code {
 
 .uv-modules-container {
   margin-bottom: 3rem;
+}
+
+.link-button {
+  text-align: start;
+  width: 100%;
+  font-size: larger;
 }
 
 @media only screen and (min-width: 1200px) {
