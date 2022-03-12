@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlusCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { Field, FieldArray, Formik } from 'formik';
 import * as Yup from 'yup';
 

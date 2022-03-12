@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as faFonts from '@fortawesome/free-solid-svg-icons';
+import { Button } from 'react-bootstrap';
 
 import { getErrorInString } from "../../../modules/Errors/ErrorService";
-import { Button } from 'react-bootstrap';
 
 import './UVSidebar.css';
 
@@ -36,6 +38,8 @@ const UVSidebar = props => {
             <li className="nav-item" key={linkIndex}
               onClick={event => { handleNavigation(event, linkIndex, process.env.PUBLIC_URL + '/' + linkObj.href) }}>
               <Button className={"nav-link link-button " + (linkIndex === activeIndex ? 'active' : '')}>
+                <FontAwesomeIcon icon={faFonts[linkObj.icon]}
+                  className='cursorPointer' />
                 {linkObj.title}
               </Button>
             </li>

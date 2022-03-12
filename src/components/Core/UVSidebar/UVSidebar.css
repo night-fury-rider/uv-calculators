@@ -5,3 +5,7 @@
 .sidebar {
   height: 100vh;
 }
+
+.sidebar svg {
+  margin-right: 1rem;
+}

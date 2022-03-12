@@ -14,19 +14,23 @@
     "links": [
       {
         "title": "Lowest Price",
-        "href": "lowest-price"
+        "href": "lowest-price",
+        "icon": "faDollarSign"
       },
       {
         "title": "Percentage",
-        "href": "percentage"
+        "href": "percentage",
+        "icon": "faPercent"
       },
       {
         "title": "Inflation",
-        "href": "inflation"
+        "href": "inflation",
+        "icon": "faChartLine"
       },
       {
-        "title": "Tax Exempted HRA",
-        "href": "hra"
+        "title": "HRA",
+        "href": "hra",
+        "icon": "faHome"
       }
     ]
   },
